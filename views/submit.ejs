@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+<div style="margin: 50px; text-align: center;" >
+
+  <h1>CREATE BLOG</h1>
+<form class="" action="/submit" method="post" >
+
+  <div class="form-group" style="width: 500px;margin-left: 32%;">
+    <label >Title</label>
+    <input class="form-control" rows="10" cols="20" type="text" name="Title">
+    <label>Blog Message</label>
+    <textarea class="form-control" name="Message" rows="10" cols="20"></textarea>
+  </div>
+  <button style="margin-top: 15px;" class="btn btn-primary" type="submit" name="button">Publish</button>
+</form>
+
+</div>
+
+
+<%- include('partials/footer') %>

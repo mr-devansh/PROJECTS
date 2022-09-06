@@ -1,0 +1,32 @@
+<%- include('partials/header') %>
+
+<div class="jumbotron text-center">
+  <div class="container">
+    <!-- <i class="fas fa-key fa-6x"></i> -->
+    <h1 class="display-3">You've Discovered Your Blogs!</h1>
+    
+    <%foundBlogs.forEach(function(blog){%>
+
+        <table class="table table-bordered  ">
+          <thead>
+            <tr>
+              <th scope="col">Title</th>
+              <th scope="col">Message</th>
+              <th scope="col">PostTime</th>
+            </tr>
+          </thead>
+            <tbody>
+              <tr>
+                <td><%=blog.Title%></td>
+                <td><%=blog.Message%></td>
+                <td><%=blog.PostTime%></td>
+              </tr>
+            </tbody>
+          </table>
+
+    <%})%>
+    <hr>
+  </div>
+</div>
+
+<%- include('partials/footer') %>
